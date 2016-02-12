@@ -76,10 +76,11 @@ angular.module('starter.controllers', ['angularSoundManager'])
                   id: tracks[i].id,
                   title: tracks[i].title,
                   artist: tracks[i].genre,
-                  url: sm_object.url
+                  url: sm_object.url,
+                  artwork_url: tracks[i].artwork_url
                   // url: 'http://api.soundcloud.com/tracks/193270658/stream?client_id=b80d3102f512d040b46a881dacbb2526'
               };
-              console.log(track);
+              // console.log(track);
               $scope.$apply(function () {
                   $scope.songs.push(track);
               });

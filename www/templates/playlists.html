@@ -1,24 +1,31 @@
 <ion-view view-title="Playlists">
   <ion-content>
+  <div>
 
+   <!-- <div class="row"> -->
+            <!-- <div class="col-md-12"> -->
 
-   <div class="row">
-            <div class="col-md-12">
-
-                <h5>Songs</h5>
-                <ul>
-                    <li ng-repeat="song in songs">
-                        <button music-player="play" add-song="song">{{ song.title }}</button>
-                        <button music-player add-song="song">+</button>
+                <ul class="list">
+                   <li class="item" ng-repeat="song in songs">
+                        <a music-player="play" add-song="song" style="color:black;"><img ng-src="{{song.artwork_url}}" height="30">
+                     {{ song.title }}</a>
+                        <!-- <button music-player add-song="song">+</button> -->
                     </li>
                 </ul>
 
-                <button play-all="songs">Play all</button>
+                <!-- <ul> -->
+                    <!-- <li ng-repeat="song in songs"> -->
+                        <!-- <button music-player="play" add-song="song">{{ song.title }}</button> -->
+                        <!-- <button music-player add-song="song">+</button> -->
+                    <!-- </li> -->
+                <!-- </ul> -->
 
-            </div>
-        </div>
+                <!-- <button play-all="songs">Play all</button> -->
 
-        <hr />
+            <!-- </div> -->
+        <!-- </div> -->
+</div>
+        <!-- <hr /> -->
 
         <div class="row">
             <div class="col-md-12">
